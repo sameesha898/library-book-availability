@@ -32,3 +32,28 @@ loginForm.addEventListener("submit", function(event) {
         message.style.color = "red";
     }
 });
+
+// ==============================
+// Book Search Feature
+// ==============================
+
+const searchForm = document.getElementById("searchForm");
+
+if (searchForm) {
+    searchForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const bookName = document.getElementById("bookName").value.trim();
+        const searchMessage = document.getElementById("searchMessage");
+
+        if (bookName === "") {
+            searchMessage.textContent = "Please enter a book name.";
+            return;
+        }
+
+        // Store the searched book name for the next feature
+        localStorage.setItem("searchedBook", bookName);
+
+        searchMessage.textContent = "Searching for: " + bookName;
+    });
+}

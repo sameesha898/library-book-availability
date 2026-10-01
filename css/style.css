@@ -85,3 +85,62 @@ body {
     margin-top: 15px;
     font-size: 14px;
 }
+
+/* ==============================
+   Book Search Page
+   ============================== */
+
+.search-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-container h2 {
+    margin-bottom: 10px;
+}
+
+.search-container p {
+    margin-bottom: 20px;
+}
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+}
+
+#bookName {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+#searchForm button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchMessage {
+    margin-top: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
